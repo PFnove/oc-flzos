@@ -13,10 +13,8 @@ do
   loadfile("/lib/core/boot.lua")(loadfile)
 end
 
-system_unlocked = true
-
 while true do
-  --require("boot_code")
+  require("boot_code")
   while system_unlocked do
     local result, reason = xpcall(require("shell").getShell(), function(msg)
       return tostring(msg).."\n"..debug.traceback()
