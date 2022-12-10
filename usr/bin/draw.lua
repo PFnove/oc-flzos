@@ -41,7 +41,7 @@ while true do
   gpu.setBackground(color)
   local _, _, x, y, mouse_btn = event.pull("touch")
   if x >= 78 and x <= 80 and y == 1 then
-    os.execute("shutdown")
+    _ = 0 / 0
   end
   if x == 65 and y == 1 and penSize >= 2 then
     penSize = penSize - 1
