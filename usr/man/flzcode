@@ -1,0 +1,12 @@
+NAME
+  flzcode - FLZcode 2.3 interpreter
+
+SYNOPSIS
+  flzcode
+
+DESCRIPTION
+  Launches a command line that can be used to run FLZcode code. This can be very useful for testing out commands.
+
+EXAMPLES
+  flzcode
+    Launcher the FLZcode 2.3 interpreter
