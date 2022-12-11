@@ -311,16 +311,16 @@ local download_prefix = "https://raw.githubusercontent.com/PFnove/oc-flzos/main/
 
 local max_len = #flzos
 for i=0, max_len do
+  if hi_res then
+    drawLogo(54, w/2, h/7, 0x1A1A1A, 0x0070F0)
+    gpu.setBackground(0x707070)
+  end
   local percentage = i*100/max_len
   drawProgressBar(w/4, h-h/5, w/2, percentage, 0x0070F0)
   if tostring(flzos[i]) == flzos[i] then
     downloadFile(flzos[i], download_prefix)
   else
     exec(flzos[i])
-  end
-  if hi_res then
-    drawLogo(54, w/2, h/7, 0x1A1A1A, 0x0070F0)
-    gpu.setBackground(0x707070)
   end
   os.sleep(0)
 end
