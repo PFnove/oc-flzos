@@ -322,7 +322,7 @@ for i=0, max_len do
   else
     exec(flzos[i])
   end
-  os.sleep(0)
+  os.sleep(0) -- Graphics fix for OCEmu
 end
 
 gpu.fill(1, 1, w, 5, " ")
